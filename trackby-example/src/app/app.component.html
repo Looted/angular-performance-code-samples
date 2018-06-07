@@ -1,0 +1,15 @@
+<!-- Sorting this won't cause destroying and reinserting html nodes -->
+<app-child fontSize="5rem" *ngFor="let number of numbers" [value]="number"></app-child>
+<button (click)="reverseSort(numbers)">Reverse sort order</button>
+<hr>
+<!-- Sorting this won't cause destroying and reinserting html nodes -->
+<app-child fontSize="5rem" *ngFor="let object of objects" [value]="object"></app-child>
+<button (click)="reverseSort(objects)">Reverse sort order</button>
+<hr>
+<!-- Sorting this will cause destroying and reinserting html nodes unless trackBy is used-->
+<app-child fontSize="5rem" *ngFor="let object of objectsImmutable; let i = index;" [value]="object"></app-child>
+<button (click)="sortImmutable(objectsImmutable)">Reverse and clone</button>
+<hr>
+<!-- Sorting this will cause destroying and reinserting html nodes unless trackBy is used -->
+<button (click)="sortImmutableHuge(objectsImmutableHuge)">Reverse and clone</button>
+<app-child fontSize="1rem" *ngFor="let object of objectsImmutableHuge; let i = index; trackBy: trackByFn" [value]="object"></app-child>

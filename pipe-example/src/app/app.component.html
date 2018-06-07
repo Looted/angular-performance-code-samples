@@ -1,0 +1,8 @@
+<app-party-parrot></app-party-parrot>
+<app-party-parrot></app-party-parrot>
+<app-party-parrot></app-party-parrot>
+<app-party-parrot></app-party-parrot>
+<app-party-parrot></app-party-parrot>
+<!-- Use the below version for better performance! -->
+<!-- <div *ngFor="let number of numbers" >{{ number + 1 | multiplyAndDivide: 10000 }}</div> -->
+<div *ngFor="let number of numbers" >{{ multiplyAndDivide(number + 1, 10000) }}</div>

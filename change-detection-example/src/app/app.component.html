@@ -1,0 +1,9 @@
+<h1>App - Default CD Strategy</h1>
+<button (click)="partyHard()">Party performance measurement</button>
+<div class="party-parrots" *ngIf="partying">
+  <app-party-parrot *ngFor="let party of partyCollection"></app-party-parrot>
+</div>
+<hr>
+<app-cd-onpush></app-cd-onpush>
+<app-cd-default></app-cd-default>
+<!-- <app-performace-test></app-performace-test> -->

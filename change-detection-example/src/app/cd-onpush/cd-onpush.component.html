@@ -1,0 +1,9 @@
+<h1>OnPush CD Strategy</h1>
+<div (click)="false;">
+<app-internal-change></app-internal-change>
+<app-input-driven-change [input]="counter"></app-input-driven-change>
+<app-input-driven-change [input]="counterInArray"></app-input-driven-change>
+<!-- RxJS with an async pipe is a tricky case, since it runs markForCheck!
+https://github.com/angular/angular/blob/master/packages/common/src/pipes/async_pipe.ts -->
+<!-- <app-rxjs-change></app-rxjs-change> -->
+</div>

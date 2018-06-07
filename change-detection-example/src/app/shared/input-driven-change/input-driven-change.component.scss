@@ -1,0 +1,27 @@
+:host {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10rem;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    text-align: center;
+  }
+
+  span {
+    font-size: 2rem;
+  }
+
+  h5 {
+    margin: 0;
+  }
+}

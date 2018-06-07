@@ -1,0 +1,8 @@
+<button (click)="partyHard()">Party performance measurement</button>
+<div class="party-parrots" *ngIf="partying">
+  <app-party-parrot *ngFor="let party of partyCollection"></app-party-parrot>
+</div>
+<hr>
+<button (click)="loadData()">Reload!</button>
+<app-row *ngFor="let datum of data$ | async">{{ datum.name }} {{ datum.surname }}</app-row>
+<!-- <app-row *ngFor="let datum of lazyData$ | async">{{ datum.name }} {{ datum.surname }}</app-row> -->

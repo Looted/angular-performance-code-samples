@@ -1,0 +1,14 @@
+$s-min: 20;
+$s-max: 70;
+$l-min: 30;
+$l-max: 90;
+
+:host {
+  transform: 0;
+}
+
+div {
+  margin: 5px;
+  box-shadow: 2px 2px 4px black;
+  border: 1px solid black;
+}
